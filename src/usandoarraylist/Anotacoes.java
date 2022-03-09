@@ -7,6 +7,11 @@ package usandoarraylist;
  */
 public class Anotacoes {
     
+    /*
+    https://receitasdecodigo.com.br/java/exemplo-de-foreach-do-java-8
+    https://blog.betrybe.com/java-foreach/
+    */
+    
     /*Criando o ArrayList    
     ArrayList< Qualquer_Tipo > nomeDoArrayList = new ArrayList< Qualquer_Tipo >();    
     */
@@ -54,6 +59,41 @@ public class Anotacoes {
 
       if (v[i] > maior)
          maior = v[i];
+    }
+    */
+    
+    
+    
+  /*
+  while(!resposta.equals(true) ){
+  //Testando comparação
+  System.out.println(RespostaArray);
+      
+  System.out.println("Digite Quantas possições Deseja? \n Valores Entre 0 - 10");
+  ValorPosicoesArray=teclado.nextInt();
+    
+ String[] NotaAluno = new String[ValorPosicoesArray];
+ 
+    NotaAluno[0]=("Juca");
+    NotaAluno[1]=("Marcos");
+    NotaAluno[2]=("Maria");
+    NotaAluno[3]=("Bazan");
+    NotaAluno[4]=("Bruna");
+    NotaAluno[5]=("Pedro");
+    NotaAluno[6]=("Julia");
+    NotaAluno[7]=("Vanessa");
+    NotaAluno[8]=("Robs");
+    NotaAluno[9]=("Simone");
+  }
+    for(int contador=0;contador < NotaAluno; contador++)
+    System.out.println(NotaAluno.get(contador));
+    
+    teclado.close();
+    }
+    }
+public void ArrayNotaAluno(){
+    
+    
     }
     */
     
