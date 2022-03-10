@@ -10,53 +10,55 @@ public class Logica {
     /*public Logica() {
     }*/
         //Variaveis
- int RespostaCase1;   
- int ValorPosicoesArray,RespostaArray;
- boolean resposta, TipoArray; 
- boolean retorno;
+ int RespostaCase1; int ValorPosicoesArray,RespostaArray;
+ boolean resposta, TipoArray; boolean retorno;
  String CadArrayAlunos[];
  double CadArrayNotas[];
  
     Scanner teclado = new Scanner(System.in); 
  
+    public void ArrayNotas(){
+          for(int contadorNotasCase=0;contadorNotasCase<RespostaCase1;contadorNotasCase++){
+                CadArrayNotas = new double[10];
+                CadArrayNotas[0]=1.00; //1
+                CadArrayNotas[1]=2.50; //2
+                CadArrayNotas[2]=3.25; //3
+                CadArrayNotas[3]=10; //4
+                CadArrayNotas[4]=8.99; //5
+                CadArrayNotas[5]=7; //6
+                CadArrayNotas[6]=3.20; //7
+                CadArrayNotas[7]=4.90; //8
+                CadArrayNotas[8]=7.87; //9
+                CadArrayNotas[9]=9.90; //10
+                System.out.println(CadArrayNotas[contadorNotasCase]);
+         }//Fim do FOR de Notas
+    }
     public void TamanhoArray(){
         do{
         System.out.println("Deseja montar um ARRAY de quantas posições? "
                  + "\n Digite um Valor de 1 a 10 Posições"
                  + "\n Para Sair Digite 0");
                     RespostaCase1=teclado.nextInt();
-        if((RespostaCase1<10) ||(RespostaCase1 > 1) ){
+        if((RespostaCase1<10) || (RespostaCase1 > 1) ){
             retorno = true;
-            //int contadorAlunosCase1 = RespostaCase1-1;
+
             System.out.println("Quantidade de ARRAY: "+RespostaCase1);
-            //for(int Contador=0; Contador < RespostaCase1; Contador++ ){
             for(int contadorAlunosCase=0;RespostaCase1>contadorAlunosCase;contadorAlunosCase++){
-                CadArrayAlunos = new String[RespostaCase1];               
-                CadArrayAlunos[contadorAlunosCase]="Joao"; //1
-                CadArrayAlunos[contadorAlunosCase]="Pedro"; //2
-                CadArrayAlunos[contadorAlunosCase]="Paulo"; //3
-                CadArrayAlunos[contadorAlunosCase]="Julia"; //4
-                CadArrayAlunos[contadorAlunosCase]="Luiz"; //5
-                CadArrayAlunos[contadorAlunosCase]="Manoel"; //6
-                CadArrayAlunos[contadorAlunosCase]="Juracir"; //7
-                CadArrayAlunos[contadorAlunosCase]="Marcus"; //8
-                CadArrayAlunos[contadorAlunosCase]="Mariane"; //9
-                CadArrayAlunos[contadorAlunosCase]="Vanessa"; //10
+                CadArrayAlunos = new String[10];               
+                CadArrayAlunos[0]="Joao"; //1
+                CadArrayAlunos[1]="Pedro"; //2
+                CadArrayAlunos[2]="Paulo"; //3
+                CadArrayAlunos[3]="Julia"; //4
+                CadArrayAlunos[4]="Luiz"; //5
+                CadArrayAlunos[5]="Manoel"; //6
+                CadArrayAlunos[6]="Juracir"; //7
+                CadArrayAlunos[7]="Marcus"; //8
+                CadArrayAlunos[8]="Mariane"; //9
+                CadArrayAlunos[9]="Vanessa"; //10
                 System.out.println(CadArrayAlunos[contadorAlunosCase]);
+                
             }//Fim do For de alunos
-           /*for(int contadorNotasCase=0;contadorNotasCase<RespostaCase1;contadorNotasCase++){
-                CadArrayNotas[contadorNotasCase]=1.00; //1
-                CadArrayNotas[contadorNotasCase]=2.50; //2
-                CadArrayNotas[contadorNotasCase]=3.25; //3
-                CadArrayNotas[contadorNotasCase]=10; //4
-                CadArrayNotas[contadorNotasCase]=8.99; //5
-                CadArrayNotas[contadorNotasCase]=7; //6
-                CadArrayNotas[contadorNotasCase]=3.20; //7
-                CadArrayNotas[contadorNotasCase]=4.90; //8
-                CadArrayNotas[contadorNotasCase]=7.87; //9
-                CadArrayNotas[contadorNotasCase]=9.90; //10
-                System.out.println(CadArrayAlunos[contadorNotasCase]);
-         }//Fim do FOR de Notas*/
+         
                     }else{
             System.out.println("Valor não identificado");
                         }

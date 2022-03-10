@@ -13,6 +13,7 @@ public class UsandoArrayList {
         */
         Logica logica = new Logica();
         logica.CadastroArrayAlunos();
+        logica.ArrayNotas();
     }
     
 }
